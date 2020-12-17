@@ -1,0 +1,329 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 50px 0;
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.screenshots{
+    text-align: center;
+}
+
+.screenshots header h1{
+    color: #444;
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.screenshots header h2{
+    color: #777;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.screenshots .s-carusel::before{
+    display: block;
+    height: 100%;
+    width: 240px;
+    background-color: #fff;
+    content: '';
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: -55px;
+    padding: 55px 0;
+    border: 5px solid #edf4f8;
+    border-radius: 36px;
+    background-image: linear-gradient(#0007, transparent, transparent, #0007);
+}
+
+.screenshots .camera{
+    position: relative;
+    top: 80px;
+}
+
+.screenshots .camera::before{
+    content: '';
+    height: 5px;
+    width: 6px;
+    background-color: #e4e8eb;
+    border: #edf4f8 2px solid;
+    border-radius: 100%;
+    position: absolute;
+    top: -24px;
+    left: -90px;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.screenshots .speaker{
+    position: relative;
+}
+
+.screenshots .speaker::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    top: -22px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: #d7dcdf;
+    border-radius: 4px;
+}
+
+.screenshots .button{
+    position: relative;
+}
+
+.screenshots .button::before{
+    height: 38px;
+    width: 38px;
+    box-sizing: border-box;
+    border: #edf4f8 solid 3px;
+    content: '';
+    bottom: -48px;
+    position: absolute;
+    border-radius: 100%;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.screenshots .s-carusel div{
+    outline: none;
+}
+
+.screenshots .s-carusel img{
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.screenshots .s-carusel img{
+    transform: scale(0.6);
+    opacity: 0.3;
+}
+
+.screenshots .s-carusel .slick-current + div img{
+    position: relative;
+    right: 28px;
+}
+
+.screenshots .s-carusel .slick-current+div+div+div img{
+    position: relative;
+    left: 28px;
+}
+
+.screenshots .s-carusel .slick-current + div img,
+.screenshots .s-carusel .slick-current+div+div+div img{
+    transform: scale(0.8);
+    opacity: 0.7;
+}
+
+.screenshots .s-carusel .slick-current + div + div img{
+    transform: scale(1.0);
+    opacity: 1;
+    border: 1px solid #edf4f8;
+}
+
+.screenshots .slick-prev.slick-arrow::before{
+    color: #333;
+}
+
+.screenshots .slick-next.slick-arrow::before{
+    color: #333;
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .screenshots .s-carusel img,
+    .screenshots .s-carusel .slick-current + div + div img{
+        transform: scale(0.5);
+        opacity: 0.5;
+        position: relative;
+        left: -1px;
+        top: -42px;
+    }
+
+    .screenshots .s-carusel .slick-current + div img{
+        transform: scale(0.8);
+        border: 1px solid #edf4f8;
+        opacity: 1;
+    }
+
+    .screenshots .s-carusel::before{
+        display: block;
+        height: 81%;
+        width: 260px;
+        background-color: #fff;
+        content: '';
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        position: absolute;
+        border: 5px solid #edf4f8;
+        border-radius: 36px;
+        background-image: linear-gradient(#0007, transparent, transparent, #0007);
+    }
+    
+    .screenshots .button{
+        position: relative;
+    }
+    
+    .screenshots .button::before{
+        height: 38px;
+        width: 38px;
+        box-sizing: border-box;
+        border: #edf4f8 solid 3px;
+        content: '';
+        position: absolute;
+        border-radius: 100%;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape){
+    .container{
+        width: 900px;
+        margin: 0 auto;
+    }
+
+        .screenshots .s-carusel img,
+        .screenshots .s-carusel .slick-current + div + div img{
+        transform: scale(0.4);
+        opacity: 0.5;
+    }
+
+    .screenshots .s-carusel .slick-current + div img{
+        transform: scale(0.8);
+        border: 1px solid #edf4f8;
+        opacity: 1;
+    }
+ 
+}
+
+@media (max-width: 940px){
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .screenshots .s-carusel::before{
+        display: block;
+        height: 470px;
+        width: 270px;
+        background-color: #fff;
+        content: '';
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: -55px;
+        padding: 55px 0;
+        border: 5px solid #edf4f8;
+        border-radius: 36px;
+        background-image: linear-gradient(#0007, transparent, transparent, #0007);
+    }
+
+    .screenshots .button{
+        position: relative;
+    }
+    
+    .screenshots .button::before{
+        height: 38px;
+        width: 38px;
+        box-sizing: border-box;
+        border: #edf4f8 solid 3px;
+        content:'';
+        position: absolute;
+        bottom: 85px;
+        border-radius: 100%;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .screenshots .s-carusel .slick-current img{
+        transform: scale(0.75);
+        border: 1px solid #edf4f8;
+        opacity: 1;
+        position: relative;
+        top: -60px;
+    }
+}
+
+@media (max-width: 940px) and (orientation: landscape){
+
+    .screenshots .s-carusel .slick-current img{
+        transform: scale(1);
+        border: 1px solid #edf4f8;
+        opacity: 1;
+    }
+
+    .screenshots .s-carusel::before{
+        display: block;
+        height: 85%;
+        width: 166px;
+        background-color: #fff;
+        content: ''0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: -55px;
+        padding: 55px 0;
+        border: 5px solid #edf4f8;
+        border-radius: 30px;
+        background-image: linear-gradient(#0007, transparent, transparent, #0007);
+    }
+
+    .screenshots .button{
+        position: relative;
+    }
+    
+    .screenshots .button::before{
+        height: 38px;
+        width: 38px;
+        box-sizing: border-box;
+        border: #edf4f8 solid 3px;
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        border-radius: 100%;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    
+    .screenshots .s-carusel .slick-slide{
+        text-align: center;
+    }
+
+    .screenshots .s-carusel img{
+        transform: scale(0.9) !important;
+        display: inline-block;
+        height: 300px;
+        width: 170px;
+        top: -20px !important;
+    }
+}
